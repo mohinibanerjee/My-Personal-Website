@@ -1,16 +1,120 @@
 <!DOCTYPE html>
 <html>
 
+<style>
+ul {
+  float:left;
+  position:relative;
+  font-size: 30px;
+  color: blue;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  background-color: #f1f1f1;
+}
+li a {
+  display: block;
+  color: fuchsia;
+  padding: 8px 16px;
+}
+li a:hover {
+  background-color: pink;
+  color: white;
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.highschool{
+    text-align:center;
+    font-size: 30px;
+    color: blue;
+}
+
+.college{
+    text-align: center
+    color: blue;
+    font-size: 30px;
+}
+
+.image{
+    padding:60px;
+}
+
+
 </style>
 
 <head>
   <meta charset="UTF-8">
-</head>
 <body>
 
 <h1 class = header>Education and Organizations </h1>
-<p class = header>And welcome to my life!!! </p>
+
+<nav>
+    <ul rgb(255, 153, 255)>
+      <li><a href="about.html">About me</a></li>
+      <li><a href="education.html">Education and Organizations</a></li>
+      <li><a href="work.html">Work Experience</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<p>
+  <span style="float: left" class = highschool>Monta Vista High School</span>
+  <span style="float: right" class = college>Carnegie Mellon University</span>
+</p> 
+
+<div class = "image">
+<img src = "mvhs.jpg" width = "400" height = "300" ALIGN = "center"> 
+<img src = "cmu.jpg" width = "400" height = "300" ALIGN = "right", ALIGN = "top"> 
+</div>
+
+<p style = "padding: 10px" Located in Cupertino, California</p>
 
 
+<br>
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+</div>
+</div>
+</head>
 </body>
 </html>
