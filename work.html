@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html>
 <style>
-ul {
-  float:left;
-  position:relative;
-  font-size: 30px;
-  color: blue;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 300px;
-  background-color: #f1f1f1;
+
+.alignleft {
+  text-align:  left;
 }
-li a {
-  display: block;
-  color: fuchsia;
-  padding: 8px 16px;
+.alignright {
+  text-align: right;
 }
-li a:hover {
-  background-color: pink;
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
   color: white;
 }
 
@@ -30,25 +44,42 @@ li a:hover {
 <body>
 <body background="background.jpg" no-repeat; width: 100%; height: 150px; background-size: 100%; >
 
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="about.html">About me</a>
+  <a href="education.html">Education and Organizations</a>
+  <a href="work.html">Work Experience</a>
+  <a href="project.html">Projects</a>
+  <a href="skills.html">Skills</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</div>
+
 <h1 class = header>Work Experience </h1>
 <p class = header>And welcome to my life!!! </p>
 
-<nav>
-    <ul rgb(255, 153, 255)>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About me</a></li>
-      <li><a href="education.html">Education and Organizations</a></li>
-      <li><a href="work.html">Work Experience</a></li>
-      <li><a href="project.html">Projects</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
 
 <div class="content">
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et elit sit amet ipsum tempor efficitur. Praesent metus metus, malesuada et nunc in, maximus dictum magna. Cras vitae porttitor tellus, ac aliquet urna. Etiam purus urna, consectetur eu quam vitae, eleifend scelerisque magna. Donec condimentum, nunc vel elementum blandit, lacus neque venenatis nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et elit sit amet ipsum tempor efficitur. Praesent metus metus, malesuada et nunc in, maximus dictum magna. Cras vitae porttitor tellus, ac aliquet urna. Etiam purus urna, consectetur eu quam vitae, eleifend scelerisque magna. Donec condimentum, nunc vel elementum blandit, lacus neque venenatis nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et elit sit amet ipsum tempor efficitur. Praesent metus metus, malesuada et nunc in, maximus dictum magna. Cras vitae porttitor tellus, ac aliquet urna. Etiam purus urna, consectetur eu quam vitae, eleifend scelerisque magna. Donec condimentum, nunc vel elementum blandit, lacus neque venenatis nisi.
-        </p>
+        <h1> Cloud Workload Assurance Intern at Symantec Corporation </h1>
+        <p class="alignright"> Mountain View, CA </p>
+        <p class="alignright"> May 2019-August 2019 </p>
+        <center>I wrote a program that extracts resources from a customer’s Cloud Formation/Terraform Template and performs a vulnerability assessment to ensure that the configuration is valid and secure per CIS Benchmark standards using a stored procedure. 
+        The vulnerability assessment stage is added when the template is built and passed to a new microservice on the server, which will parse and store the template information in a database.
+        </center>
+
+        <h1> Peer Tutor in CMU Academic Development </h1>
+        <p class="alignright"> Pittsburgh, PA </p>
+        <p class="alignright"> January 2019-present </p>
+        <center>Certified under College Reading and Learning Association (CRLA), I tutor CMU freshmen in Calculus as part of the Academic Development team. 
+        </center>
+
+
+        <h1> Cloud Platform Engineering Intern at Symantec Corporation </h1>
+        <p class="alignright"> Mountain View, CA </p>
+        <p class="alignright"> May 2018-August 2018 </p>
+        <center>I was a member of the Cloud Platform Engineering team which is responsible for developing the core platform services that other cloud security application teams in Symantec use. One of those core platform services is customer provisioning where enterprise customers are provisioned into the Symantec cloud in order to manage user accounts through various provisioning services. I fetched live data from the Global Catalog and displayed it on the Provisioning Web Interface. I also added UI features so that the customer experience would be more friendly. I used Jira to pick up my stories, Git for source code control, Vagrant and VirtualBox for testing locally on my laptop, and Docker and AWS for integration testing.
+        </center>
+        
 
 </div>
 
